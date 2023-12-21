@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #e67380, #d3a1a9, #d3a1a9, #e67380);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    text-align: center;
+}
+
+.game-title {
+    color: #fff;
+    font-size: 48px; 
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #000; 
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-button {
+    background-color: #fff;
+    border: 2px solid #d3a1a9;
+    color: #333;
+    padding: 20px 40px;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.game-button:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+.difficulty-button {
+    border: 2px solid #161314;
+    color: #333;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.difficulty-button:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+}
+
+.difficulty-button.easy {
+    background-color: #4CAF50;
+}
+
+.difficulty-button.medium {
+    background-color: #FFEB3B;
+}
+
+.difficulty-button.hard {
+    background-color: #F44336; 
+}
+
+.player-name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+}
+
+.player-name-input {
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 20px; 
+    width: 50%;
+    border: 2px solid #d3a1a9; 
+}
+
+.small-button {
+    padding: 10px 20px; 
+    font-size: 18px;
+    margin-top: 20px; 
+}
+
+
+
+
+
+#ranking-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000; 
+}
+
+#ranking-title {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#ranking-list {
+    max-height: 300px;
+    overflow-y: auto; 
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#ranking-list div {
+    font-size: 20px; 
+    text-align: center; 
+    margin: 10px 0; 
+}
+
+
+#close-ranking {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #e67380;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+#close-ranking:hover {
+    background-color: #ff9a9e;
+}
+
+#colorado {
+    background: linear-gradient(-45deg, #FFB6C1, #87CEFA, #FFB6C1, #87CEFA);
+    background-size: 400% 400%;
+    color: rgb(5, 5, 5);
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1em;
+    animation: gradient 15s ease infinite;
+}
+
+
+#colorado:hover {
+    background-image: linear-gradient(to right, #87CEFA, #FFB6C1); 
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.green-theme .game-title {
+    color: #A2CD5A;
+}
+
+.green-theme .game-button {
+    background: linear-gradient(-45deg, #8FBC8F, #9ACD32);
+}
+
+.green-theme {
+    background: linear-gradient(-45deg, #C1FFC1, #8FBC8F);
+}
+
+
+
+.brown-theme .game-title {
+    color: #D2B48C;
+}
+
+.brown-theme .game-button {
+    background: linear-gradient(-45deg, #BC8F8F, #D2B48C);
+}
+
+.brown-theme {
+    background: linear-gradient(-45deg, #BC8F8F, #D2B48C);
+}
+
+
+.blue-theme .game-title {
+    color: #87CEFA;
+}
+
+.blue-theme .game-button {
+    background: linear-gradient(-45deg, #ADD8E6, #B0E0E6);
+}
+
+.blue-theme {
+    background: linear-gradient(-45deg, #E0FFFF, #B0E0E6);
+}
+
+
+.pink-theme .game-title {
+    color: #FFB6C1;
+}
+
+.pink-theme .game-button {
+    background: linear-gradient(-45deg, #FFC0CB, #FFB6C1);
+}
+
+.pink-theme {
+    background: linear-gradient(-45deg, #FFDAB9, #FFC0CB);
+}

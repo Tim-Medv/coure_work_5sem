@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="content">
+        <h1 class="game-title">Chemistry</h1>
+        <div class="button-container">
+            <button class="game-button" onclick="startGame()">Начать игру</button>
+            <button class="game-button" id="show-ranking">Рейтинг</button>
+            <button class="game-button" id="reset-ranking">Сброс</button>
+            <button class="game-button" id="colorado">смена цветов</button>
+        </div>
+
+        <div class="difficulty-container" style="display: none;">
+            <h2 class="difficulty-title">Сложность</h2>
+            <button class="difficulty-button easy">Easy</button>
+            <button class="difficulty-button medium">Medium</button>
+            <button class="difficulty-button hard">Hard</button>
+        </div>
+
+        <div class="player-name-container" style="display: none;">
+            <h2 class="game-title">Имя игрока</h2>
+            <input type="text" class="player-name-input"/>
+            <button class="game-button small-button" onclick="confirmName()">Подтвердить</button>
+        </div>               
+    </div>
+
+    <div id="ranking-container" style="display: none;">
+        <h2 id="ranking-title">Рейтинг игроков</h2>
+        <div id="ranking-list"></div>
+        <button id="close-ranking" class="close-ranking-button">Закрыть</button>
+    </div>
+
+</body>
+</html>
